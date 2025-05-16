@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ejercicio 2 - Login</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login de Usuario</h2>
+        <form method="post" class="formulario">
+            <label>Usuario:</label>
+            <input type="text" name="usuario" required><br>
+
+            <label>Contraseña:</label>
+            <input type="password" name="clave" required><br>
+
+            <input type="submit" value="Ingresar" class="btn">
+        </form>
+        <a href="/" class="btn">Volver al Menú</a>
+    </div>
+</body>
+</html>

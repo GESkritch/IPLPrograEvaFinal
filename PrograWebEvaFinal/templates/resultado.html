@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Resultado</title>
+</head>
+<body>
+    <div class="container">
+        {% if tipo == 'compra' %}
+            <h2>Resumen de Compra</h2>
+            <p><strong>Nombre:</strong> {{ nombre }}</p>
+            <p><strong>Total sin descuento:</strong> ${{ total }}</p>
+            <p><strong>El descuento es:</strong> ${{ descuento_aplicado }}</p>
+            <p><strong>Total con descuento:</strong> ${{ total_descuento }}</p>
+        {% elif tipo == 'login' %}
+            <h2>Resultado del Login</h2>
+            <p><strong>{{ mensaje }}</strong></p>
+        {% endif %}
+        <a href="/" class="btn">Volver al Menú</a>
+    </div>
+</body>
+</html>

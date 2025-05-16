@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ejercicio 1 - Compra de Pintura</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Compra</h2>
+        <form method="post" class="formulario">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required><br>
+
+            <label>Edad:</label>
+            <input type="number" name="edad" required><br>
+
+            <label>Tarros de pintura:</label>
+            <input type="number" name="cantidad" required><br>
+
+            <input type="submit" value="Calcular" class="btn">
+        </form>
+        <a href="/" class="btn">Volver al Menú</a>
+    </div>
+</body>
+</html>
